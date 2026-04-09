@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "group": "cursed_ingot",
+  "ingredient": {
+    "item": "cross-fiction:cursed_stone"
+  },
+  "result": {
+    "id": "cross-fiction:cursed_ingot"
+  }
+}

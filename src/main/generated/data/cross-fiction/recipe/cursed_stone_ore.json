@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "minecraft:cobbled_deepslate"
+    },
+    "S": {
+      "item": "cross-fiction:cursed_stone"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "CSC",
+    "CCC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "cross-fiction:cursed_stone_ore"
+  }
+}

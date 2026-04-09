@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cross-fiction:cursed_ingot_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "cross-fiction:cursed_ingot"
+  }
+}
