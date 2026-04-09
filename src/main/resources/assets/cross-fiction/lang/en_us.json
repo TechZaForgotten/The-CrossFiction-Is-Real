@@ -1,0 +1,10 @@
+{
+  "item.cross-fiction.cursed_stone": "Cursed Stone",
+  "item.cross-fiction.cursed_ingot": "Cursed Ingot",
+
+  "block.cross-fiction.cursed_ingot_block": "Cursed Ingot Block",
+  "block.cross-fiction.cursed_stone_ore": "Cursed Stone Ore",
+
+  "itemgroup.cross-fiction.fictional_items": "Fictional Items",
+  "itemgroup.cross-fiction.fictional_blocks": "Fictional Blocks"
+}
