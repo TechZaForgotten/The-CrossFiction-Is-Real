@@ -6,5 +6,8 @@
   "block.cross-fiction.cursed_stone_ore": "Cursed Stone Ore",
 
   "itemgroup.cross-fiction.fictional_items": "Fictional Items",
-  "itemgroup.cross-fiction.fictional_blocks": "Fictional Blocks"
+  "itemgroup.cross-fiction.fictional_blocks": "Fictional Blocks",
+
+  "key.category.cross-fiction.crossfiction": "Cross Fiction",
+  "key.category.cross-fiction.use_power": "Use Power"
 }

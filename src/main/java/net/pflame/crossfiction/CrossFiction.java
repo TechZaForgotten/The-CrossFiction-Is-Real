@@ -2,6 +2,11 @@ package net.pflame.crossfiction;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
+import net.minecraft.entity.passive.SheepEntity;
+import net.minecraft.item.Items;
+import net.minecraft.text.Text;
+import net.minecraft.util.ActionResult;
 import net.pflame.crossfiction.block.ModBlocks;
 import net.pflame.crossfiction.item.ModItemGroups;
 import net.pflame.crossfiction.item.ModItems;
@@ -19,5 +24,19 @@ public class CrossFiction implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		AttackEntityCallback.EVENT.register((playerEntity, world, hand, entity, entityHitResult) ->
+		{
+			if (entity instanceof SheepEntity sheepEntity && !world.isClient) {
+				if (playerEntity.getMainHandStack().getItem() == Items.END_ROD) {
+					playerEntity.sendMessage(Text.literal("Did you just shove that up its ass?"));
+					playerEntity.getMainHandStack().decrement(1);
+					sheepEntity.setHealth(0f);
+				}
+				return ActionResult.PASS;
+			}
+
+			return ActionResult.PASS;
+		});
 	}
 }
